@@ -11,8 +11,8 @@ return array(
     $vendorDir . '/symfony/var-dumper/Symfony/Component/VarDumper/Resources/functions/dump.php',
     $vendorDir . '/ircmaxell/password-compat/lib/password.php',
     $vendorDir . '/swiftmailer/swiftmailer/lib/swift_required.php',
-    $vendorDir . '/nikic/fast-route/src/functions.php',
     $vendorDir . '/guzzlehttp/streams/src/functions.php',
-    $vendorDir . '/laravel/lumen-framework/src/helpers.php',
+    $vendorDir . '/nikic/fast-route/src/functions.php',
     $vendorDir . '/guzzlehttp/guzzle/src/functions.php',
+    $vendorDir . '/laravel/lumen-framework/src/helpers.php',
 );

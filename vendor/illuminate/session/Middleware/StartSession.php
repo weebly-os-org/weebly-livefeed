@@ -99,6 +99,7 @@ class StartSession implements TerminableMiddleware {
 	protected function startSession(Request $request)
 	{
 		with($session = $this->getSession($request))->setRequestOnHandler($request);
+
 		$session->start();
 
 		return $session;
