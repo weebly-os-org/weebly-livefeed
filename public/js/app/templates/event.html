@@ -1,0 +1,16 @@
+<div class="cd-timeline-img cd-picture is-hidden">
+  <i class="event-icon fa <%= event.getIconClass() %>"/>
+</div>
+
+<div class="cd-timeline-content is-hidden">
+  <h2><%= event.getTitle() %></h2>
+  <p>
+    <ul>
+      <% for (var key in event.getData()) { %>
+        <% if (event.getData().hasOwnProperty(key)) { %>
+          <li><%= key + ": " + event.getData()[key] %></li>
+        <% } %>
+      <% } %>
+    </ul>
+  </p>
+</div>

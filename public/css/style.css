@@ -1,0 +1,140 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+header {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #1C77E8;
+  overflow: hidden;
+}
+
+header i {
+  position: absolute;
+  top: 14px;
+  font-size: 22px;
+  color: white;
+}
+
+.signout {
+  right: 15px;
+}
+
+.change-site {
+  right: 45px;
+}
+
+.change-site::before{
+  cursor: pointer;
+}
+
+.site-options.open {
+  display:block;
+}
+
+.site-options h4 {
+  margin: 0px;
+}
+
+.site-options ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.site-options ul li{
+  cursor: pointer;
+}
+
+.site-options {
+  display:none;
+  width: 200px;
+  background-color: white;
+  height: auto;
+  position: absolute;
+  right: 24px;
+  min-height: 100px;
+  z-index: 10;
+  box-shadow: 3px 3px 1px #d7e4ed;
+  top: 50px;
+  border-radius: 3px;
+  border: 1px solid #d7e4ed;
+}
+
+.site-options::before {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  top: -13px;
+  right: 23px;
+  border-color: transparent;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid white;
+}
+
+#sidebar {
+  float: left;
+  width: 200px;
+}
+
+#main {
+  overflow: hidden;
+}
+
+header h1 {
+  font-size: 24px;
+  color: white;
+  margin: 0px;
+}
+
+h1 {
+  font-family: 'Open Sans', serif;
+}
+
+
+.event-icon{
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+}
+#hamburger {
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  float: left;
+}
+#hamburger span, #hamburger span:before, #hamburger span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#hamburger span:before {
+  top: -10px; 
+}
+#hamburger span:after {
+  bottom: -10px;
+}
+
+#hamburger span, #hamburger span:before, #hamburger span:after {
+  transition: all 500ms ease-in-out;
+}
+#hamburger.active span {
+  background-color: transparent;
+}
+#hamburger.active span:before, #hamburger.active span:after {
+  top: 0;
+}
+#hamburger.active span:before {
+  transform: rotate(45deg);
+}
+#hamburger.active span:after {
+  transform: rotate(-45deg);
+}
