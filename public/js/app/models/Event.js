@@ -101,6 +101,22 @@ define([
         'store.order.cancel': {
 			'title': 'An order has been cancelled.',
 			'iconClass': 'fa-times'
+		},
+		'store.coupon.create': {
+			'title': 'A coupon was created.',
+			'iconClass': 'fa-ticket'
+		},
+		'store.coupon.update': {
+			'title': 'A coupon was updated',
+			'iconClass': 'fa-ticket'
+		},
+		'store.coupon.delete': {
+			'title': 'A coupon was deleted.',
+			'iconClass': 'fa-ticket'
+		},
+		'store.coupon.use': {
+			'title': 'A coupon was used!.',
+			'iconClass': 'fa-ticket'
 		}
 	}
 
