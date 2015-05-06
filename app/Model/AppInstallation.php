@@ -45,6 +45,10 @@ class AppInstallation extends Model
                     'store.order.refund',
                     'store.order.return',
                     'store.order.cancel',
+                    'store.coupon.create',
+                    'store.coupon.update',
+                    'store.coupon.delete',
+                    'store.coupon.use',
                 ],
                 'callback_url' => 'http://weebly-livefeed.scalingo.io/events'
             ]
